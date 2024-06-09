@@ -1,0 +1,6 @@
+TIPOS DE VARIABLES Y DATOS.
+  Las variables son contenedores que almacenan los datos durante la ejecucion del programa
+  Los tipos de datos que hay en java son:
+  Primitivos: son los de tipo int,double,string,chat,float,boolean.
+  No primitivos: pertenecen a las clases, matrices e interfaces.
+  
