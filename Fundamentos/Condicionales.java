@@ -1,25 +1,43 @@
 import java.util.Scanner;
+
 public class Condicionales {
-  public static void main (String []args){
-    Scanner prueva = new Scanner (System.in);
+  public static void main(String[] args) {
 
-//Ejemplo 1 de uso instancia de la clase Scanner
-  System.out.println("Ingresa nombre de usuario");
-  String name = prueva.nextLine(); /*ingresar un dato de tipo cadena utilizando la instancia de Scanner (prueva)
-                                  y lo almacena en la variable "name"*/
-  System.out.println("Usuario: "+name);//muestra por consola el valor almacenado en la variable name
-  
-//Ejemplo 2 de uso instancia de la clase Scanner
-    System.out.println("Ingresa nombre de usuario");
-    System.out.println("2 prueba usuario: "+prueva.nextLine());//ingresa el dato por sonsola, al mismo tiempo lo muestra
+    Scanner peticion = new Scanner(System.in);
     
-    /* formas de ingresar cualquier tipo de dato */
-    String nombre = prueva.nextLine(); //Tipo String
-    prueva.next(); //Tipo char
-    int edad = prueva.nextInt(); //Tipo entero
-    double estatura = prueva.nextDouble();//Tipo real
-    boolean casado = prueva.nextBoolean();//Tipo boolean
-    float peso = prueva.nextFloat();//Tipo float
+    System.out.println("Ingrese el primer valor");
+    double valor1 = peticion.nextDouble();
+    System.out.println("Ingrese el segundo valor");
+    double valor2 = peticion.nextDouble();
+    
 
+    /* if (valor1 > valor2) {
+      System.out.println("El primer valor " + valor1 + " es mayor");
+      
+      }else if (valor1 < valor2) {
+        System.out.println("El segundo valor " + valor2 + " es mayor");
+        
+        
+        }else{
+          System.out.println("Los valores son iguales");
+          } */
+        /*  switch (valor1) {// deve existir un solo valor - no hace comparativas
+           case 17:
+           System.out.println("El primer valor " + valor1 + " es mayor");
+           
+           break;
+           case 20:
+           
+           System.out.println("El primer valor " + valor1 + " es mayor");
+           break;        
+           
+           default:
+           
+            System.out.println("Los valores son iguales"); 
+            break;
+   } */
+    
+   System.out.println(valor1 > valor2  ? "El primer valor es mayor":valor1<valor2?"El segundo valor es mayor":"Son iguales");
   }
+
 }
