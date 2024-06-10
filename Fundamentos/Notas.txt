@@ -3,4 +3,30 @@ TIPOS DE VARIABLES Y DATOS.
   Los tipos de datos que hay en java son:
   Primitivos: son los de tipo int,double,string,chat,float,boolean.
   No primitivos: pertenecen a las clases, matrices e interfaces.
+
+
+FUNCIONES
+  Una funcion es un bloque de codigo que se puede repetir en distintas ocaciones.Este se declara fuera del metodo main.
+  Declaracion del metodo:
+
+  Forma 1: convirtiendo la funcion en estatica.
+
+    public static double SumarNumero(double numero1,double numero2){
+      return numero1 + numero2;
+    }
+  Forma 2: creando una unstancia de la clase principal.
+    public double SumarNumero(double numero1, double numero2){
+      return numero1 + numero2;
+    }
+
+  Llamado del metodo
+  Forma 1: 
+    SumarNumero(valor1,valor2)  
+  
+  Forma 2: 
+    (nombre de la clase principal)Funciones funciones = new Funciones();
+    funciones.SumarNumero(valor1,valor2)
+    
+
+  
   
