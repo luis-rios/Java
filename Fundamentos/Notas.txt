@@ -28,5 +28,47 @@ FUNCIONES
     funciones.SumarNumero(valor1,valor2)
     
 
-  
-  
+OPERADORES DE ASIGNACION:
+  Existen los operadores para arealizar operaciones basicas como lo son:
+  + , - , * , / , % 
+
+  También están metodos de la clase Math:
+
+  abs(double a): Devuelve el valor absoluto de un valor double.
+  abs(float a): Devuelve el valor absoluto de un valor float.
+  abs(int a): Devuelve el valor absoluto de un valor int.
+  abs(long a): Devuelve el valor absoluto de un valor long.
+
+  (Valor maximo y minimo)
+  max(double a, double b): Devuelve el mayor de dos valores double.
+  max(float a, float b): Devuelve el mayor de dos valores float.
+  max(int a, int b): Devuelve el mayor de dos valores int.
+  max(long a, long b): Devuelve el mayor de dos valores long.
+  min(double a, double b): Devuelve el menor de dos valores double.
+  min(float a, float b): Devuelve el menor de dos valores float.
+  min(int a, int b): Devuelve el menor de dos valores int.
+  min(long a, long b): Devuelve el menor de dos valores long.
+
+  (Redondeo)
+  ceil(double a): Devuelve el menor valor double que es mayor o igual a a y es un entero.
+  floor(double a): Devuelve el mayor valor double que es menor o igual a a y es un entero.
+  rint(double a): Devuelve el valor double que es más cercano al entero más cercano a a.
+  round(double a): Devuelve el valor long que es más cercano al entero más cercano a a.
+  round(float a): Devuelve el valor int que es más cercano al entero más cercano a a.
+
+  (Exponenciación y algoritmos)
+  exp(double a): Devuelve e elevado a la potencia de a.
+  expm1(double x): Devuelve e elevado a la potencia de x menos uno.
+  log(double a): Devuelve el logaritmo natural (base e) de a.
+  log10(double a): Devuelve el logaritmo en base 10 de a.
+  log1p(double x): Devuelve el logaritmo natural de 1 + x.
+
+  (Potencias y raices)
+  exp(double a): Devuelve e elevado a la potencia de a.
+  expm1(double x): Devuelve e elevado a la potencia de x menos uno.
+  log(double a): Devuelve el logaritmo natural (base e) de a.
+  log10(double a): Devuelve el logaritmo en base 10 de a.
+  log1p(double x): Devuelve el logaritmo natural de 1 + x.
+
+  (Genera numeros aleatoreos)
+  randon(): devuelve un número aleatoreo double mayor o igual que '0.0' y menor que '1.0'
