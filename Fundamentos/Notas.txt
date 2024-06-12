@@ -24,7 +24,7 @@ FUNCIONES
     SumarNumero(valor1,valor2)  
   
   Forma 2: 
-    (nombre de la clase principal)Funciones funciones = new Funciones();
+    (nombre de la clase principal)==> Funciones funciones = new Funciones();
     funciones.SumarNumero(valor1,valor2)
     
 
