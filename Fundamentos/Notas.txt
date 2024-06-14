@@ -72,3 +72,29 @@ OPERADORES DE ASIGNACION:
 
   (Genera numeros aleatoreos)
   randon(): devuelve un número aleatoreo double mayor o igual que '0.0' y menor que '1.0'
+
+Loops:
+  Son sentencias siclicas, se utilizan cuando es necesario repetir un bloque de codigo
+  
+  (For)
+  El siclo for se utliza cuando se conoce el numero exacto de iteraciones a realizar.
+  Declaración:
+  for(declaracion;condicional;incremento-decremento){cuerpo de ejecucion}
+
+  (while)
+  El siclo while se utiliza cuando no se conoce el numero de iiteraciones a realizar.
+  Declaración:
+  while(condicion){cuerpo de ejecucion}
+
+  (do while)
+  El siclo de ejecucion "do while" se utiliza cuando no se conoce el numero de iteraciones Y
+  se debe ejecutar almenos 1 vez.
+  Declaracion:
+  do {cuerpo de ejecucion} while(condicion)
+
+  (forEach)
+  El siclo "forEach" es utlizado para recorrer matrices o colecciones.
+  Declaracion:
+  for(data_type variable:array_name){código de ejecucion}
+
+  
