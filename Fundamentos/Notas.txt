@@ -97,4 +97,4 @@ Loops:
   Declaracion:
   for(data_type variable:array_name){código de ejecucion}
 
-  
+
