@@ -76,13 +76,44 @@ public class Loops {
       System.out.println(string);
     }
   }
-  /* Solicita una cadena de texto, devuelve el numero de vocales. */
+  /* Solicita una cadena de texto, devuelve el numero de vocales, utilizando forEach.*/
   public static void concatenarVocales(){
     Scanner scanner = new Scanner(System.in);
 
     System.out.println("Ingresar texto");
     String cadena = scanner.nextLine();
-    
+    char arr [] = cadena.toCharArray();
+    int contador=0;
+    for(int iteracion: arr){
+      if (iteracion=='a'||iteracion=='e'||iteracion=='i'||iteracion=='o'||iteracion=='u') {
+        contador+=1;
+      }
+    }System.out.println("El numero de vocales de la cadena de texto es: "+contador);
+
+  }
+  /* Solicita una cadena de texto, devuelve el numero de vocales, utilizando do while.*/
+  public static void contadorVocales(){
+    int contador1=0;
+    int contador2=0;
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Ingresar cadena de texto");
+    char arr [] = scanner.nextLine().toCharArray();
+    do {
+      if (arr[contador1]=='a'||arr[contador1]=='e'||arr[contador1]=='i'||arr[contador1]=='o'||arr[contador1]=='u') {
+        contador2+=1;
+      }  
+      contador1+=1;    
+    }while(contador1<arr.length);
+    System.out.println("El total de vocales dentro de la cadena de texto es: "+contador2);
+  }
+  /* Calcular el promedio de los numeros dentro de un array utilizando forEach*/
+  public static void calcularPromedio(){
+    int arr[]={10,20,30,40,50};
+    int acumulador=0;
+    for(int iteracion:arr ){
+      acumulador+=iteracion;
+    }
+    System.out.println("El promedio es: "+((double)acumulador/arr.length));
   }
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
@@ -111,6 +142,7 @@ public class Loops {
     /* sumarNumerosPositivos(); */
 
     //Ejercicio 2 de Loop do-while
+    /* concatenarVocales(); */
 
     //Ejercicio 3 de Loop do-while
 
@@ -118,9 +150,10 @@ public class Loops {
     /* imprimirArreglo(); */
 
     //Ejercicio 2 de forEach
-    concatenarVocales();
+    /* concatenarVocales(); */
+
     //Ejercicio 3 de forEach
-
-
+    /* Promedio en un array de numeros */
+    calcularPromedio();
   }
 }
