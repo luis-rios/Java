@@ -97,4 +97,33 @@ Loops:
   Declaracion:
   for(data_type variable:array_name){código de ejecucion}
 
+Excepciones:
+  Las excepcionas se usan para manejar bloques de codigo que podrian llegar a presentar
+  alguna falla y estas interrumpar el flujo de la la aplicación y se 
+  interrumpa abruptamente.
 
+  Uso:
+  Estos se manejan a travez del uso de Try/Catch/Finally.
+  try{
+    "intenta ejecutar este bloque de codigo"
+  }catch(codigo del error e){
+    System.out.println("Se produjo un error tal")
+  }finally{
+    "este bloque de codigo siempre se ejecuta independientemente si el codigo es 
+    interrumpido o no"
+  }
+
+  Los codigos de error más comunes son:
+  1._ArithmeticException: Ocurre cuando se intenta una operación aritmética ilegal, como la división por cero.
+  2._ArrayIndexOutOfBoundsException: Ocurre cuando se intenta acceder a un índice fuera de los límites de un array.
+  3._NullPointerException: Ocurre cuando se intenta utilizar un objeto que no ha sido inicializado (es null).
+  4._NumberFormatException: Ocurre cuando se intenta convertir una cadena a un número en un formato no válido.
+
+Estructuras de datos:
+  Arrays:
+  Es una colección de elementos que almacena el mismo tipo de dato,accediendo a estos 
+  mediante un indice.
+  
+  Declaracion:
+  (tipo de dato)  (nombre)      (almacena los datos)
+        string         Nombres[] = {"luis","yair","rios","miranda"}; 
