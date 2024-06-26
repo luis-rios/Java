@@ -121,9 +121,113 @@ Excepciones:
 
 Estructuras de datos:
   Arrays:
-  Es una colección de elementos que almacena el mismo tipo de dato,accediendo a estos 
-  mediante un indice.
+    Es una colección de elementos que almacena el mismo tipo de dato,accediendo a estos mediante un indice.
+    -Tamaño fijo.
+    -Acceso rápido mediante indice.
+
+    Declaracion:
+    (tipo de dato)  (nombre)      (almacena los datos)
+          string    Nombres[]  =  {"luis","yair","rios","miranda"}; 
+    
+    Gestion:
+    1.- llenar un posición en espesifico del array.
+      Array.fill(array,fromIndex,toIndex,value);
+
+    2.- Comparar arrays.
+      boolean resultado = Array.equals(array1,array2);
+      boolean resultado = Array.deepEquals(array1,array2); *para array anidados.
+
+    3.- Convertir array en string.
+      String Array.toString(Array);
+      String Array.deepToString(Array); *para array multidimencionales.
+
+    4.- Ordenar array.
+      Array.sort(intArray);
   
-  Declaracion:
-  (tipo de dato)  (nombre)      (almacena los datos)
-        string         Nombres[] = {"luis","yair","rios","miranda"}; 
+  Listas:
+    Estructuras de datos dinamicas que pueden cambiar de tamaño.
+
+    1.- List.
+      ArrayList es una lista redimencionable basada en un array.
+      -Accede rápido a los elementos.
+      -Lento para ingresarlos.
+      
+      Declaración:
+      ArrayList<String> nombres = new ArrayList<>();
+      nombres.add("Luis");
+      System.out.println(nombres.get(0));
+    
+    2.- LinkedList.
+      Lista basada en nodos enlazados.
+      -Rápida para ingresar elementos.
+      -Lenta para acceder.
+
+      Declaracion:
+      LinkedList<String> nombres = new LinkedList<>();
+      nombres.add("Luis");
+      System.out.println(nombres.get(0));
+  
+  Conjuntos (Sets):
+    Colección que no permite elementos duplicados.
+
+    Declaracion:
+    HashSet<String> nombres = new HashSet<>();
+    nombres.add("Luis");
+    nombres.add("Yair");
+    nombres.add("Luis"); //No se agregara porque es un elemento repetido.
+
+    System.out.println(nombres.size()); Imprime 2 elementos.
+  
+  Mapas (maps):
+    Estructura que asocia datos por clave/valor.
+
+    Declaracion:
+    HashMap<String, Integer> edades = new HashMap<>();
+    edades.put("Luis",25);
+    
+    System.out.println(nombres.get("Luis")); //Imprime 25.
+
+  
+  Pilas (Stacks):
+    Estructura de datos LIFO (Last in,Last Out).
+
+    Declaracion:
+    Stack<String> pila = new Stack<>();
+    pila.push("Luis");
+    
+    System.out.println(pila.pop()); //Imprime "Luis".
+  
+  Colas (Queues):
+    Estructura de datos de tipo FIFO (Firt in, First Out).
+
+    Declaracion:
+    Queues<String> cola = new LinkedList<>();
+    cola.add("Luis");
+
+    System.out.println(cola.poll()); //Imprime "Luis".
+
+  Deques (Double-ended Queues):
+    Es un cola doblemente terminada que permite la insercion y eliminación de elementos
+    por ambos extremos.
+
+    Declaracion:
+    Deque<String> deque = new LinkedList<>();
+    deque.addFirst("Luis");
+    deque.addFirst("Yair");
+
+    System.out.println(deque.removeFirst()); //Imprime "Luis".
+    System.out.println(deque.removeLast()); //Imprime "Yair".
+
+  Resumen: 
+    Arreglos (Arrays): Tamaño fijo, acceso rápido por índice.
+    Listas (Lists): Tamaño dinámico, ArrayList es rápida para acceder, LinkedList es rápida para insertar/eliminar.
+    Conjuntos (Sets): No permite duplicados, HashSet es la implementación más común.
+    Mapas (Maps): Asociaciones clave-valor, HashMap es la implementación más común.
+    Pilas (Stacks): LIFO, usa la clase Stack.
+    Colas (Queues): FIFO, LinkedList es una implementación común.
+    Deques: Inserción y eliminación por ambos extremos, LinkedList es una implementación común.
+
+
+  
+  
+
