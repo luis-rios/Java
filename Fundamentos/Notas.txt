@@ -143,6 +143,10 @@ Estructuras de datos:
 
     4.- Ordenar array.
       Array.sort(intArray);
+    
+    5.- Instanciar con valor por defecto.
+      int ArrayEnteros [] = new int[5] -> se crea con un valor de 5 espacios.
+      String ArrayNombres [] = new String[2] -> se crea con un valor de 2 espacios.
   
   Listas:
     Estructuras de datos dinamicas que pueden cambiar de tamaño.
