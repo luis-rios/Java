@@ -66,6 +66,20 @@ public class Array_ejercicios {
 
   
   }
+  //Funcion ejercicio 3.
+  public static void calcularPromedio(){
+    double notas [] = new double[5];
+    double acumulador=0.0;
+    for(int i=0;i<5;i++){
+      System.out.println("Ingrese la notas para calcular el promedio: ");
+      notas[i] = scanner.nextDouble();
+    }
+    for (double d : notas) {
+      acumulador+=d;
+
+    }
+    System.out.println("El promedio es = "+(float)(acumulador/5));
+  }
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     
@@ -78,7 +92,13 @@ public class Array_ejercicios {
      * Crea un programa que lea 10 numeros enteros desde el teclado, los almecene en 
      * un arreglo y luego calcule y muestre la suma de los elementos del arreglo.
     */
-    sumarNumeros();
+    //sumarNumeros();
+
+    /* Ejercicio 3 Array. 
+     * Crea un programa que lea 5 nota de estudiantes desde el teclado, las almacene
+     * y luego calcule y muestre el promedio de las notas.
+    */
+    //calcularPromedio();
 
     /* Ejercicio 1 Array-list.
      * Crear un programa que getione una lista de tareas pendientes. Permite al usuario

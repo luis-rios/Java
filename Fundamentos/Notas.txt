@@ -14,7 +14,7 @@ FUNCIONES
     public static double SumarNumero(double numero1,double numero2){
       return numero1 + numero2;
     }
-  Forma 2: creando una unstancia de la clase principal.
+  Forma 2: creando una instancia de la clase principal.
     public double SumarNumero(double numero1, double numero2){
       return numero1 + numero2;
     }
@@ -73,6 +73,9 @@ OPERADORES DE ASIGNACION:
   (Genera numeros aleatoreos)
   randon(): devuelve un número aleatoreo double mayor o igual que '0.0' y menor que '1.0'
 
+  (Convertir un de untipo de dato a otro)
+  (int),(float),(String)
+  
 Loops:
   Son sentencias siclicas, se utilizan cuando es necesario repetir un bloque de codigo
   
