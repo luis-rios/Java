@@ -235,6 +235,7 @@ Estructuras de datos:
     Deques: Inserción y eliminación por ambos extremos, LinkedList es una implementación común.
 
 
-  
-  
+Definiciones:
+  1.- Scope: es el limite en donde tiene acceso una varible dentro de un bloque de código.
+    Donde sea declarada, este dependera su alcance para ser utilizada.
 

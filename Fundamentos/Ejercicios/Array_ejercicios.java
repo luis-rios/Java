@@ -80,6 +80,42 @@ public class Array_ejercicios {
     }
     System.out.println("El promedio es = "+(float)(acumulador/5));
   }
+  //Funcion ejercicio 4.
+  public static void numerosParesImpares() {
+    int numeros [] = new int[4]; 
+    int contador=0;   
+    int contadorPar =0;
+    int contadorImpar =0;
+    
+    
+    for(int i=0;i<4;i++){
+      System.out.println("Ingrese un numero par o impar");      
+      numeros[i] = scanner.nextInt();    
+      int temp = numeros[i]%2!=0?contadorImpar++:contadorPar++; 
+    }
+    int numerosPares [] = new int[contadorImpar];
+    int numerosImpares [] = new int[contadorPar];
+    System.out.println("Antes del while"+Arrays.toString(numeros));
+    int cont1=0;
+    int cont2=0;
+    while (contador < numeros.length) {
+      
+      
+      if (numeros[contador]%2!=0) {
+        numerosImpares[cont2] = numeros[contador];
+        System.out.println("dentro de impares"+Arrays.toString(numerosImpares));
+        cont2+=1;
+      }else {
+        numerosPares[cont1] = numeros[contador];
+        System.out.println("dentro de pares"+Arrays.toString(numerosPares));
+        cont1+=1;
+      }
+      contador++;
+    }
+    System.out.println("Los numeros pares son: "+
+      Arrays.toString(numerosPares)+
+      "\nLos numeros impares son: "+Arrays.toString(numerosImpares));
+  }
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     
@@ -99,6 +135,13 @@ public class Array_ejercicios {
      * y luego calcule y muestre el promedio de las notas.
     */
     //calcularPromedio();
+
+    /* Ejercicio 4 Array.
+     * Crea un programa que lea 10 numero enteros desde el teclado, los almacene en un
+     * arreglo y luego separe los números pares eh impares.Finalmente, muestre los números
+     * pares eh impares por separado.
+    */
+    numerosParesImpares();
 
     /* Ejercicio 1 Array-list.
      * Crear un programa que getione una lista de tareas pendientes. Permite al usuario
