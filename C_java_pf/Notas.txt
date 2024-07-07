@@ -1,7 +1,7 @@
 TIPOS DE VARIABLES Y DATOS.
   Las variables son contenedores que almacenan los datos durante la ejecucion del programa
   Los tipos de datos que hay en java son:
-  Primitivos: son los de tipo int,double,string,chat,float,boolean.
+  Primitivos: son los de tipo int,double,string,chat,float,boolean,final(const).
   No primitivos: pertenecen a las clases, matrices e interfaces.
 
 
@@ -173,6 +173,18 @@ Estructuras de datos:
       LinkedList<String> nombres = new LinkedList<>();
       nombres.add("Luis");
       System.out.println(nombres.get(0));
+    
+    metodos:
+      ArrayList (List):
+      add(E e): Agrega elementos a la lista.
+      get(int index): Accede a un elemento en el índice especificado.
+      set(int index, E element): Reemplaza el elemento en el índice especificado.
+      remove(int index): Elimina el elemento en el índice especificado.
+      contains(Object o): Verifica si la lista contiene el elemento especificado.
+      size(): Obtiene el tamaño de la lista.
+      iterator(): Itera sobre los elementos de la lista.
+      subList(int fromIndex, int toIndex): Crea una sublista de la lista original.
+
   
   Conjuntos (Sets):
     Colección que no permite elementos duplicados.
@@ -184,7 +196,15 @@ Estructuras de datos:
     nombres.add("Luis"); //No se agregara porque es un elemento repetido.
 
     System.out.println(nombres.size()); Imprime 2 elementos.
-  
+    
+    Metodos:
+      HashSet (Set):
+      add(E e): Agrega elementos al conjunto.
+      contains(Object o): Verifica si el conjunto contiene el elemento especificado.
+      remove(Object o): Elimina el elemento especificado del conjunto.
+      size(): Obtiene el tamaño del conjunto.
+      iterator(): Itera sobre los elementos del conjunto.
+
   Mapas (maps):
     Estructura que asocia datos por clave/valor.
 
@@ -212,6 +232,18 @@ Estructuras de datos:
     cola.add("Luis");
 
     System.out.println(cola.poll()); //Imprime "Luis".
+    
+    Metodos:
+      LinkedList (Queue):
+      offer(E e): Agrega elementos a la cola.
+      peek(): Accede al primer elemento de la cola sin eliminarlo.
+      poll(): Accede y elimina el primer elemento de la cola.
+      remove(): Elimina el primer elemento de la cola.
+      isEmpty(): Verifica si la cola está vacía.
+      size(): Obtiene el tamaño de la cola.
+      clear(): Elimina todos los elementos de la cola.  
+
+
 
   Deques (Double-ended Queues):
     Es un cola doblemente terminada que permite la insercion y eliminación de elementos
@@ -238,4 +270,51 @@ Estructuras de datos:
 Definiciones:
   1.- Scope: es el limite en donde tiene acceso una varible dentro de un bloque de código.
     Donde sea declarada, este dependera su alcance para ser utilizada.
+
+POO:
+  Class:
+    Plantilla o modulo que define un objeto. Las clases encapsulan datos y comportamientos que son comunes al mismo tipo de objeto.
+    -Los datos son representados por atributos/caracteristicas del objeto.
+    -Los comportamientos son las funciones/acciones a ejecutar del objeto.
+    -Las instancias son objetos creados apartir de esa clase.
+    -Los constructores son llamados al momento de crear una instancia, estos se utilizan para asignar los valores a los atributos.
+
+    Declaracion:
+    public class "nombre de la clase"{
+        //Atributos pribados
+        private int edad;
+        private String nombre;
+
+        //Constructor
+        public Persona(int edad,String nombre){
+            this.edad = edad;
+            this.nombre = nombre
+        }
+        //Metodos
+        public int getEdad(){
+            return edad;
+        }
+        public void setEdad(int edad){
+            this.edad = edad;
+        }
+
+        public String getNombre(){
+            return nombre;
+        }
+        public void setNombre(String nombre){
+            this.nombre = nombre;
+        }
+    }
+    Crear instancia de la clase:
+        public staic void main(String[] args){
+            Person person1 = new Persona(29,"Skoll"); //Se pueden declarar los atributos por defecto desde la  instancia de la clase.
+
+            //Declarar atributos después de la instancia.
+            persona1.setEdad(29);
+            persona1.setNombre("Skoll");
+
+            //Obteniendo valores.
+            persona1.getEdad();
+            persona1.getNombre();
+        }
 
