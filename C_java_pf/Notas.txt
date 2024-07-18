@@ -19,13 +19,19 @@ FUNCIONES
       return numero1 + numero2;
     }
 
-  Llamado del metodo
-  Forma 1: 
-    SumarNumero(valor1,valor2)  
+  Llamado del metodo:
+    Forma 1: 
+      SumarNumero(valor1,valor2)  
+    
+    Forma 2: 
+      (nombre de la clase principal)==> Funciones funciones = new Funciones();
+      funciones.SumarNumero(valor1,valor2)
   
-  Forma 2: 
-    (nombre de la clase principal)==> Funciones funciones = new Funciones();
-    funciones.SumarNumero(valor1,valor2)
+  Declalracion:
+    Forma1:
+      public void nombreFuncion(){} ==> "Tiene acceso fuera y dentro de la clase"
+    Forma2:
+      void nombreFuncion(){} ==> "Es accesible solo dentro del mismo paquete"
     
 
 OPERADORES DE ASIGNACION:
@@ -133,7 +139,7 @@ Estructuras de datos:
           string    Nombres[]  =  {"luis","yair","rios","miranda"}; 
     
     Gestion:
-    1.- llenar un posición en espesifico del array.
+    1.- llenar una posición en espesifico del array.
       Array.fill(array,fromIndex,toIndex,value);
 
     2.- Comparar arrays.
@@ -317,4 +323,18 @@ POO:
             persona1.getEdad();
             persona1.getNombre();
         }
+  Encapsulamiento:
 
+
+DETALLES:
+  Modificador de acceso:
+    public => este tiene acceso desde cualquier otra clase.
+    private => solo tiene acceso dentro de la misma clase.
+    protected => tiene acceso cualquier clase dentro del mismo paquete.
+    default => tiene acceso dentro del mismo paquete.
+  
+  static:
+    Con este no es ne cesario crear una instancia para tener acceso a el.
+  
+  void:
+    Es el tipo de dato que retornara.

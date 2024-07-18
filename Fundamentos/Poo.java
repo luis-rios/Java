@@ -1,4 +1,4 @@
-package POO;
+package Fundamentos;
 
 public class Poo {
     //Atributos privados
@@ -9,14 +9,14 @@ public class Poo {
     private  double salario;
 
     //Constructor con parámetros.
-    /*public Poo(String nombre,int edad, char sexo, String puesto, double salario){
+    /* public Poo(String nombre,int edad, char sexo, String puesto, double salario){
         this.nombre=nombre;
         this.edad=edad;
         this.sexo=sexo;
         this.puesto=puesto;
         this.salario=salario;
 
-    }*/
+    } */
     //constructor
     public Poo(){
     }
