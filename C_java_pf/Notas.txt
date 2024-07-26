@@ -156,6 +156,7 @@ Estructuras de datos:
     5.- Instanciar con valor por defecto.
       int ArrayEnteros [] = new int[5] -> se crea con un valor de 5 espacios.
       String ArrayNombres [] = new String[2] -> se crea con un valor de 2 espacios.
+      
   
   Listas:
     Estructuras de datos dinamicas que pueden cambiar de tamaño.
@@ -234,7 +235,8 @@ Estructuras de datos:
     Estructura de datos de tipo FIFO (Firt in, First Out).
 
     Declaracion:
-    Queues<String> cola = new LinkedList<>();
+    Queue<String> cola = new LinkedList<>();
+    Queue<Integer> cola2 = new LinkedList<>();
     cola.add("Luis");
 
     System.out.println(cola.poll()); //Imprime "Luis".
@@ -271,11 +273,6 @@ Estructuras de datos:
     Pilas (Stacks): LIFO, usa la clase Stack.
     Colas (Queues): FIFO, LinkedList es una implementación común.
     Deques: Inserción y eliminación por ambos extremos, LinkedList es una implementación común.
-
-
-Definiciones:
-  1.- Scope: es el limite en donde tiene acceso una varible dentro de un bloque de código.
-    Donde sea declarada, este dependera su alcance para ser utilizada.
 
 POO:
   Class:
@@ -324,13 +321,126 @@ POO:
             persona1.getNombre();
         }
   Encapsulamiento:
+    (Detalles de implementación no sean visibles para los usuarios)
+    Mantener ocultas las variables de clase ante otras clases,accesibles solo mediante 
+    los metodos de la clase actual.
+    Mantener las variables privadas y acceder a ellas solo mediante los metodos set,get.
 
+    caracteristicas:
+      -Control del acceso a las variables por los metodos set,get.
+      -Mallor flexibilidad para cambiar el código.
+      -Habilidad para cambiar una parte del código sin afectar otras pastes.
+    
+    Declaracion:
+      class Persona{
+        private String nombre = "";
+        public staic setNombre(String name){
+          this.nombre = name;
+        }
+      }
+  Herencia:
+    La herencia permite que las clases heredades/hijas/sub-clases, hereden las 
+    caracteristicas y funciones de la clase padre.
+
+    Declaracion:
+      public class Animal{
+        protected String nombre="";
+        protected int edad =0;
+        public Animal(String nombre,int edad){
+          this.nombre = nombre;
+          this.edad = edad;
+        }
+        public void hacerRuido(){
+          System.out.prinln("ruido")
+        }
+      }
+      public class Perro extends Animal{
+        String raza;
+        public Perro(){
+          super(); => "llamada al constructor de la súper clase"
+        }
+        public void ladrar(){
+          System.out.prinln("ladrar")
+        }
+        public static void main(String[]args){
+          Perro perro = new Perro();
+          perro.nombre="taizon";
+          perro.raza = "pastor belga";
+        }
+      }
+    caracteristicas:
+      -Reutilizar código.
+      -Código más organizado
+      
+
+  Polimorfismo:
+    (muchas formas) utilizar los metodos de las subclases a traves de una REFERENCIA 
+    de la clase principal,solo cambiando las caracteristicas pero teniendo la misma función.
+    
+    Declalracion:
+      public class Vehiculo{
+        private String tipo;
+        public void Vehiculo(String tipo){
+          this.tipo = tipo;
+        } 
+        public String getTipo(){
+          return tipo;
+        }        
+        */metodo en comun\*
+        public void moverse(){
+          System.out.println("El Vehiculo se mueve");
+        }
+      }
+      public class Coche extends Vehiculo{
+        super("coche");
+        public String moverse(){
+            System.out.println("El Vehiculose mueve en 4 ruedas");
+        }
+      }
+      public class Bisicleta extends Vehiculo{
+        super("bisicleta");
+        public String moverse(){
+            System.out.println("El Vehiculose mueve en 2 ruedas");            
+        }
+      }
+      public class Main{
+        public static  void main String(args[]){
+          Vehiculo[] Vehiculos = new Vehiculo[2]; ===>creando referencia de la clase principal de tipo array
+          Vehiculos[0] = new Coche(); ===>creando un objeto de tipo coche 
+          Vehiculo[1] = new Bisicleta(); ===>creando un obejeto de tipo bisicleta
+
+          for(Vehiculo vehiculo: vehiculos){
+            System.out.println("Este es un " + vehiculo.getTipo());
+            vehiculo.moverse();
+          }
+        }
+      }
+    Caracteristicas:
+    -
+  Abstracción:
+    Ocultar los detalles complejos y solo mostrar las funcionales,mediante clases 
+    abstractas he interfaces.
+    crear una clase con metodos y funciones abstractas, estos tienen caracteristicas y 
+    funciones sin ser definidas(Declaracion sin implementación).
+    -Ejemplo:
+      una botella,tiene un material,capacidad,color,pero no define espesificamente cuales son.
+
+    Declalracion:
+      Abstract class Embase{
+
+      }
+
+    Caracteristicas:
+      -No pueden ser instanciadas(no tienen un contructor),solo heredadas.
+      -Ningun metodo ni propiedad tienen un valor.
+      -Al ser de tipo abstracto,por de defecto son publicas.
+    
 
 DETALLES:
   Modificador de acceso:
     public => este tiene acceso desde cualquier otra clase.
     private => solo tiene acceso dentro de la misma clase.
-    protected => tiene acceso cualquier clase dentro del mismo paquete.
+    protected => tiene acceso cualquier clase dentro del mismo paquete y sub-clases.
     default => tiene acceso dentro del mismo paquete.
   
   static:
@@ -338,3 +448,23 @@ DETALLES:
   
   void:
     Es el tipo de dato que retornara.
+
+  final:
+    No puede ser redefinido.
+
+  sobrecarga:
+    puedes declarar el mismo metodo 2 veces (mismo nombre)con diferentes 
+    parametros de retorno
+
+  Scanner:
+    declara un scanner para cualquier clase.
+    public static final Scanner scanner = new Scanner();
+
+  StringBuilder:
+    clase de java para manipular cadenas de texto.
+    StringBuilder builder = new StringBuilder(cadena);
+    append(),insert(),delete(),reverse();
+
+Definiciones:
+  1.- Scope: es el limite en donde tiene acceso una varible dentro de un bloque de código.
+    Donde sea declarada, este dependera su alcance para ser utilizada.
