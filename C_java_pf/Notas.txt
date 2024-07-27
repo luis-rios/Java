@@ -465,6 +465,10 @@ DETALLES:
     StringBuilder builder = new StringBuilder(cadena);
     append(),insert(),delete(),reverse();
 
+  Arrays:
+    convierte un arrya en string
+    Arrays.toString(nombreArray);
+
 Definiciones:
   1.- Scope: es el limite en donde tiene acceso una varible dentro de un bloque de código.
     Donde sea declarada, este dependera su alcance para ser utilizada.

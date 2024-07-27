@@ -25,16 +25,37 @@ public class Listas {
     }
     System.out.println("Lista de edades \n"+lista.toString());
   }
+
+  public void invertirArray(){
+
+    System.out.println("Ingresar cadena de texto");
+    String cadena = scanner.nextLine(); 
+    String [] array = new String[cadena.toCharArray().length];   
+    int tamañoCadena = cadena.toCharArray().length;
+    int contador=1;
+
+    for(char datos:cadena.toCharArray()){
+      array[tamañoCadena-contador]=Character.toString(datos);      
+      contador+=1;
+    }
+    System.out.println(Arrays.toString(array));
+  
+  }
   public static void main(String[] args) {
     Listas listas = new Listas();
 
     //Declaración de una lista.
     ArrayList <Integer> lista = new ArrayList<>();
+    
+
     //Declaracion de una rray.
     int [] numeros = {1,2,3,4};
+    
+    /* listas.manipulacionList(lista); */
+
+    listas.invertirArray();
 
 
 
-    listas.manipulacionList(lista);
   }
 }
