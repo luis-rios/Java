@@ -41,6 +41,10 @@ public class Listas {
     System.out.println(Arrays.toString(array));
   
   }
+
+  public void calcularDias(int dias){
+    System.out.println(dias/28);
+  }
   public static void main(String[] args) {
     Listas listas = new Listas();
 
@@ -53,9 +57,9 @@ public class Listas {
     
     /* listas.manipulacionList(lista); */
 
-    listas.invertirArray();
+    /* listas.invertirArray(); */
 
-
-
+    listas.calcularDias(86);
+    
   }
 }
